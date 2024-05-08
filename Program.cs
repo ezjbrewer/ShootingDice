@@ -20,12 +20,25 @@ Console.WriteLine("-------------------");
 Player large = new LargeDicePlayer();
 large.Name = "Bigun Rollsalot";
 
+SmackTalkingPlayer player4 = new SmackTalkingPlayer();
+player4.Name = "Atraxieus";
+
+OneHigherPlayer player5 = new OneHigherPlayer();
+player5.Name = "Dexter";
+
+HumanPlayer player6 = new HumanPlayer();
+player6.Name = "Hubert Pubert";
+
+CreativeSmackTalkingPlayer player7 = new CreativeSmackTalkingPlayer();
+player7.Name = "Trench";
+
+
 player1.Play(large);
 
 Console.WriteLine("-------------------");
 
 List<Player> players = new List<Player>() {
-    player1, player2, player3, large
+    player1, player2, player3, large, player4, player5, player6, player7
 };
 
 PlayMany(players);
